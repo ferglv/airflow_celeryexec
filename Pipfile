@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+psycopg2-binary = "2.9.7"
+pandas = "2.0.3"
+apache-airflow = {extras = ["celery", "crypto", "postgres", "redis"], version = "2.5.0"}
+redis = "5.0.0"
+requests = "2.31.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.3"
