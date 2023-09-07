@@ -15,7 +15,7 @@ default_args = {
 }
 
 dag = DAG(
-    "dist_example",
+    "batch_sample",
     schedule_interval="0 0 * * *",
     catchup=False,
     default_args=default_args,

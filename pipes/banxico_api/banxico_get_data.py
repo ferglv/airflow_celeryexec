@@ -15,6 +15,5 @@ def get_banxico_data() -> bool:
     api = Banxico()
     data = api.banxico_get_series_datos("SF43718")
     if data.status_code == 200:
-        save_banxico_data(json.loads(data.text))
-        return True
+        return json.loads(data.text)
     return False

@@ -26,6 +26,7 @@ dag = DAG(
 get_data = PythonOperator(
     task_id="task_banxico_get_data",
     python_callable=get_banxico_data,
+    queue="queue_1",
     dag=dag,
 )
 
